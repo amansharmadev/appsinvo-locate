@@ -1,0 +1,43 @@
+### Create a User
+
+POST http://localhost:5000/user HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Test User",
+    "email": "test@domain.com",
+    "address": "Wall Street, 314 New York",
+    "latitude": 40.706005,
+    "longitude": 74.008827,
+    "password": "123456"
+}
+
+### Update Status of user
+PUT http://localhost:5000/user HTTP/1.1
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDc2OWQyNmIxNjFiZTQ0ZjRmMTRhMjQiLCJuYW1lIjoiVGVzdCBVc2VyIiwiZW1haWwiOiJ0ZXN0QGRvbWFpbi5jb20iLCJzdGF0dXMiOiJhY3RpdmUiLCJhZGRyZXNzIjoiV2FsbCBTdHJlZXQsIDMxNCBOZXcgWW9yayIsImxhdGl0dWRlIjo0MC43MDYwMDUsImxvbmdpdHVkZSI6LTc0LjAwODgyNywicmVnaXN0ZXJfYXQiOiIyMDIxLTA0LTE0VDA3OjQzOjM0LjU3M1oiLCJpYXQiOjE2MTgzODYyMTQsImV4cCI6MTYxODQ3MjYxNH0.FMeKDCIbF6gjVLCF1mcmK7SWRmG0dozj1m9QHOx35Ac
+Content-Type: application/json
+
+{
+
+}
+
+
+### Get Distance
+POST http://localhost:5000/distance  HTTP/1.1
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDc2OWQyNmIxNjFiZTQ0ZjRmMTRhMjQiLCJuYW1lIjoiVGVzdCBVc2VyIiwiZW1haWwiOiJ0ZXN0QGRvbWFpbi5jb20iLCJzdGF0dXMiOiJhY3RpdmUiLCJhZGRyZXNzIjoiV2FsbCBTdHJlZXQsIDMxNCBOZXcgWW9yayIsImxhdGl0dWRlIjo0MC43MDYwMDUsImxvbmdpdHVkZSI6LTc0LjAwODgyNywicmVnaXN0ZXJfYXQiOiIyMDIxLTA0LTE0VDA3OjQzOjM0LjU3M1oiLCJpYXQiOjE2MTgzODYyMTQsImV4cCI6MTYxODQ3MjYxNH0.FMeKDCIbF6gjVLCF1mcmK7SWRmG0dozj1m9QHOx35Ac
+Content-Type: application/json
+
+{
+    "latitude": 40.7580,
+    "longitude": -73.9855
+}
+
+
+### Get Users
+GET http://localhost:5000/users HTTP/1.1
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDc2OWQyNmIxNjFiZTQ0ZjRmMTRhMjQiLCJuYW1lIjoiVGVzdCBVc2VyIiwiZW1haWwiOiJ0ZXN0QGRvbWFpbi5jb20iLCJzdGF0dXMiOiJhY3RpdmUiLCJhZGRyZXNzIjoiV2FsbCBTdHJlZXQsIDMxNCBOZXcgWW9yayIsImxhdGl0dWRlIjo0MC43MDYwMDUsImxvbmdpdHVkZSI6LTc0LjAwODgyNywicmVnaXN0ZXJfYXQiOiIyMDIxLTA0LTE0VDA3OjQzOjM0LjU3M1oiLCJpYXQiOjE2MTgzODYyMTQsImV4cCI6MTYxODQ3MjYxNH0.FMeKDCIbF6gjVLCF1mcmK7SWRmG0dozj1m9QHOx35Ac
+Content-Type: application/json
+
+{
+    "weekNumber": [0,1,2,3,4,5,6]
+}
